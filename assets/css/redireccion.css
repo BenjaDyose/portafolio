@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Beaufort';
+}
+
+body {
+    height: auto;
+}
+
+/* Estilos para el nav*/
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-brand img {
+    height: 4rem;
+    width: 4rem;
+}
+
+nav {
+    height: 75px;
+    padding: 0;
+    margin: 0;
+    background-color: #9966cc;
+    
+}
+
+.navbar-brand:hover, .navbar-brand img:hover, .agrandar{
+    transition: .5s;
+}
+
+.navbar-brand:hover, .navbar-brand img:hover, .agrandar:hover{
+    transform: scale(1.2);
+}
+
+.menu {
+    background-color: #9966cc;
+    
+}
+
+/* Estilos para el header*/
+header {
+    height: 100vh;
+    font-size: 1.5rem;
+    background-color: #9999cc;
+}
+
+
+
+.img-xerath {
+    box-shadow: #fff 0px 0px 20px,
+    #99ffcc 0px 0px 30px 3PX,
+    #99cccc 0px 0px 40px 8PX,
+    #9999cc 0px 0px 50px 25PX,
+    #9966cc 0px 0px 55px;
+}
+
+.hero-text {
+    width: 50rem;
+    height: auto;
+
+}
+
+.flex-evenly-center {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+/* Estilos para el main*/
+
+main {
+    background-color: #9933cc;
+}
+
+.card img {
+    width: 100px;
+    height: auto;
+}
+
+
+.card-img-top {
+    display: flex;
+    margin: auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 calc(50% - 1rem);
+    margin: 0.5rem;
+    min-height: 100%;
+}
+
+.btn {
+    background-color:#9999cc;
+}
+
+/* Estilos para footer*/
+
+footer {
+    background-color:#99cccc
+}
+
+/* Estilos para animaciones*/
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    } to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animated {
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+
+.fade-in-up {
+    opacity: 0;
+    animation-name: fade-in-up;
+}
+
+/* Media Querys*/
+
+@media(max-height: 624px) {
+    .xerath-arcano {
+        display: none;
+    }
+}
+
+@media(max-width: 991px) {
+    #btn-llg {
+        display: none;
+    }
+
+}
+
+@media(max-width: 1180px) {
+    .xerath-arcano {
+        display: none;
+    }
+}
+

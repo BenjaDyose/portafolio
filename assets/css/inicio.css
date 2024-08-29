@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/Xerath_30.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Beaufort';
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+h1,
+h2,
+button {
+    background: transparent;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+button {
+    height: 5rem;
+    width: auto;
+    font-size: 50px;
+    background-color: #010A13;
+    border-radius: 5rem;
+    padding: 0 5%;
+    color: #fff;
+}
+
+
+#contenedor {
+    height: 100vh;
+    font-size: 4rem;
+    color: #ffff;
+    -webkit-text-stroke: 1.5px #56008c;
+    text-shadow:
+        2px 2px 10px #000,
+        /* Sombra negra */
+        0 0 5px #4b0081,
+        /* Resplandor dorado */
+        0 0 10px #4b0081,
+        0 0 20px #4b0081;
+
+}
+
+button:hover {
+    color: #000;
+    -webkit-text-stroke: 1.5px #fff;
+}
+
+#cuadroPrincipal {
+    text-align: center;
+    background: transparent;
+}
+
+@keyframes anim {
+    0% {
+        background-color: #7900ac;
+    }
+
+    25% {
+        background-color: #e6ccef;
+    }
+
+    50% {
+        background-color: #000;
+    }
+
+    75% {
+        background-color: #e6ccef;
+    }
+
+    100% {
+        background-color: #7900ac;
+    }
+
+}
+
+button {
+    animation-name: anim;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+}

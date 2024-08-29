@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Benjamin Briceño">
+    <meta name="description" content="Página web con un formulario para solicitar hora médica">
+    <title>Hora Médica</title>
+
+    <link rel="icon" type="image/svg+xml" href="../assets/img/hospital_health_clinic_building_medical_health_icon_140696.svg">
+
+
+</head>
+
+<body>
+    <header>
+        <h1>BIENVENIDO A LA CONSULTA MÉDICA</h1>
+    </header>
+    <nav>
+        <h2>SOLICITE SU HORA AQUÍ</h2>
+    </nav>
+    <main>
+        <form action="redireccFormularioM.html">
+            <div>
+                <label for="NOMBRE" title="Ingrese su Nombre">NOMBRE Y APELLIDO</label><br>
+                <input type="text" name="NOMBRE" id="NOMBRE" title="Ingrese su Nombre" placeholder="Juanito Pérez" required>
+            </div>
+            <br>
+            <div>
+                <label for="DIRECCION" title="Ingrese su Dirección">DOMICILIO</label><br>
+                <input type="text" name="DIRECCION" id="DIRECCION" title="Ingrese su Dirección" placeholder="AV. PORTALES 1400" required>
+            </div>
+            <br>
+            <div>
+                <label for="ESPECIALIDAD" title="Ingrese su requerimiento médico">ESPECIALIDAD MÉDICA</label><br>
+                <select name="ESPECIALIDAD" id="ESPECIALIDAD" title="Ingrese su requerimiento médico" placeholder="Ninguna" required>
+                    <option value=""></option>
+                    <option value="Medidina Interna">Medidina Interna</option>
+                    <option value="Medicina General">Medicina General</option>
+                    <option value="Traumatología">Traumatología</option>
+                    <option value="Nutricionista">Nutricionista</option>
+                    <option value="Kinesiologia">Kinesiologia</option>
+                </select> 
+            </div>
+            <br>
+            <div>
+                <label for="FECHA" title="Ingrese cuando quiere ser atendid@">Fecha Hora Médica</label><br>
+                <input type="date" name="FECHA" id="FECHA" title="Ingrese cuando quiere ser atendid@" required>
+            </div>
+            <br>
+            <div>
+                <label for="HORA" title="Ingrese la hora que será atendid@">Hora de su Consulta</label><br>
+                <input type="time" name="HORA" id="HORA" title="Ingrese la hora que será atendid@" required>
+            </div>
+            <br>
+            <div>
+                <label for="MAIL" title="Ingrese su mail">Ingrese Su Mail</label><br>
+                <input type="email" name="MAIL" id="MAIL" placeholder="ejemplo123@gmail.com" title="Ingrese su mail" required>
+            </div>
+            <br>
+            <div>
+                <button onclick="submit" title="Confirma tu hora médica">CONFIRMAR</time></button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
